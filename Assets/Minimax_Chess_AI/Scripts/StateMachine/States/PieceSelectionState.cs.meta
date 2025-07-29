@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: fd8255999b59ef442a71a7467e5edeb8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 237533
+  packageName: Minimax Chess AI
+  packageVersion: 1.1
+  assetPath: Assets/Minimax_Chess_AI/Scripts/StateMachine/States/PieceSelectionState.cs
+  uploadId: 544797

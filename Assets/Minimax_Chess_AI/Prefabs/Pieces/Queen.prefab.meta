@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3535c5b22e7561c4491dd15a14f21a32
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 237533
+  packageName: Minimax Chess AI
+  packageVersion: 1.1
+  assetPath: Assets/Minimax_Chess_AI/Prefabs/Pieces/Queen.prefab
+  uploadId: 544797

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: e1323b0f3744418428b5822d414af0b2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 237533
+  packageName: Minimax Chess AI
+  packageVersion: 1.1
+  assetPath: Assets/Minimax_Chess_AI/Scripts/Highlights.cs
+  uploadId: 544797

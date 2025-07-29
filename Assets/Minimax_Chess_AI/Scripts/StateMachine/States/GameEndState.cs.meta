@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 1b5df06da55f524449f7ab0e3457bb87
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 237533
+  packageName: Minimax Chess AI
+  packageVersion: 1.1
+  assetPath: Assets/Minimax_Chess_AI/Scripts/StateMachine/States/GameEndState.cs
+  uploadId: 544797

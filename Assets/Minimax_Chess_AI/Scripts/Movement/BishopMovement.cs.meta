@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: d383ca7ed8982af4f8c6bd2b5b5b7c01
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 237533
+  packageName: Minimax Chess AI
+  packageVersion: 1.1
+  assetPath: Assets/Minimax_Chess_AI/Scripts/Movement/BishopMovement.cs
+  uploadId: 544797

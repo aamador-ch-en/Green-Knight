@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 589ef3049cc9aff4a936ee22b733845c
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 237533
+  packageName: Minimax Chess AI
+  packageVersion: 1.1
+  assetPath: Assets/Minimax_Chess_AI/Prefabs/Pieces/Pawn.prefab
+  uploadId: 544797

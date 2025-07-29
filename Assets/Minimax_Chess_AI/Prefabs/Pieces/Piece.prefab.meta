@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7624f8fa51da9ea43a316dd528d97d4c
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 237533
+  packageName: Minimax Chess AI
+  packageVersion: 1.1
+  assetPath: Assets/Minimax_Chess_AI/Prefabs/Pieces/Piece.prefab
+  uploadId: 544797

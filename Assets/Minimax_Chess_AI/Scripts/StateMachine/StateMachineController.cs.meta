@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 35cbcaddf96512f4188e4cf53f06de4c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 237533
+  packageName: Minimax Chess AI
+  packageVersion: 1.1
+  assetPath: Assets/Minimax_Chess_AI/Scripts/StateMachine/StateMachineController.cs
+  uploadId: 544797

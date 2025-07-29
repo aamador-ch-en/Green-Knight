@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a7e1e84dc896c12488693acceeb5b046
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 237533
+  packageName: Minimax Chess AI
+  packageVersion: 1.1
+  assetPath: Assets/Minimax_Chess_AI/Prefabs/Pieces/King.prefab
+  uploadId: 544797

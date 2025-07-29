@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 3e3603c8387378741a5d46be28ed9b70
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 237533
+  packageName: Minimax Chess AI
+  packageVersion: 1.1
+  assetPath: Assets/Minimax_Chess_AI/Scripts/StateMachine/States/LoadState.cs
+  uploadId: 544797

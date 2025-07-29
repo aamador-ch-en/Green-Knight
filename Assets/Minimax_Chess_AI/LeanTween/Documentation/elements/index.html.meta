@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f6a53cd107c1f4d5498ea9c736e3a650
+timeCreated: 1479471015
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 237533
+  packageName: Minimax Chess AI
+  packageVersion: 1.1
+  assetPath: Assets/Minimax_Chess_AI/LeanTween/Documentation/elements/index.html
+  uploadId: 544797
