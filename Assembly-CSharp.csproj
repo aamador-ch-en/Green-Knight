@@ -206,13 +206,16 @@
     <None Include="Assets/PolygonMiniFantasy/Shaders/DistanceGradient.shader" />
     <None Include="Assets/NatureStarterKit2/Standard Assets/Effects/GlassRefraction/Shaders/GlassStainedBumpDistort.shader" />
     <None Include="Assets/UnityTechnologies/ParticlePack/TextMesh Pro/Shaders/SDFFunctions.hlsl" />
+    <None Include="Assets/Fristy Mobile CG/Shaders/Water.shader" />
     <None Include="Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/SepiaToneEffect.shader" />
     <None Include="Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/ColorCorrection3DLut.shader" />
     <None Include="Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Shaders/Ice.shader" />
     <None Include="Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/SimpleClear.shader" />
+    <None Include="Assets/Fristy Mobile CG/Shaders/Foliage Alpha by distance 1.shader" />
     <None Include="Assets/PolygonMiniFantasy/Shaders/WorldGradient.shader" />
     <None Include="Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/ContrastComposite.shader" />
     <None Include="Assets/PolygonNatureBiomes/PNB_Core/Shaders/SyntyStudios_WaterShader.shader" />
+    <None Include="Assets/Fristy Mobile CG/Shaders/Maps.shader" />
     <None Include="Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/Contrast Stretch/MinMaxReduction.shader" />
     <None Include="Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/BlurEffectConeTaps.shader" />
     <None Include="Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/_DepthOfField/Bokeh34.shader" />
@@ -239,6 +242,7 @@
     <None Include="Assets/PolygonNatureBiomes/PNB_Core/Shaders/SyntyStudios_Triplanar_01.shader" />
     <None Include="Assets/NatureStarterKit2/Standard Assets/Effects/TessellationShaders/Shaders/BumpedSpecularSmooth.shader" />
     <None Include="Assets/UnityTechnologies/ParticlePack/TextMesh Pro/Shaders/TMPro_Properties.cginc" />
+    <None Include="Assets/Fristy Mobile CG/Read Me.txt" />
     <None Include="Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/SeparableBlurPlus.shader" />
     <None Include="Assets/UnityTechnologies/ParticlePack/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
     <None Include="Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/MotionBlur.shader" />
@@ -269,9 +273,11 @@
     <None Include="Assets/PolygonDog/Documentation/Guide.txt" />
     <None Include="Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/_Antialiasing/FXAA2.shader" />
     <None Include="Assets/UnityTechnologies/ParticlePack/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
+    <None Include="Assets/Fristy Mobile CG/Shaders/Foliage.shader" />
     <None Include="Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/NoiseEffectShaderYUV.shader" />
     <None Include="Assets/UnityTechnologies/ParticlePack/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
     <None Include="Assets/UnityTechnologies/ParticlePack/TextMesh Pro/Fonts/LiberationSans - OFL.txt" />
+    <None Include="Assets/Fristy Mobile CG/Shaders/Rocks.shader" />
     <None Include="Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/Contrast Stretch/Luminance.shader" />
     <None Include="Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/_BloomAndFlares/BlurAndFlares.shader" />
     <None Include="Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/_Antialiasing/NFAA.shader" />
