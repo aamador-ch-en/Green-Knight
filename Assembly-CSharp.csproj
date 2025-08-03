@@ -58,6 +58,7 @@
     <Compile Include="Assets/Synty/AnimationBaseLocomotion/Samples/Scripts/SampleCameraController.cs" />
     <Compile Include="Assets/Minimax_Chess_AI/Scripts/Movement/KnightMovement.cs" />
     <Compile Include="Assets/Minimax_Chess_AI/Scripts/Pieces/Pawn.cs" />
+    <Compile Include="Assets/Project/Scripts/Inventory.cs" />
     <Compile Include="Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/ColorCorrectionCurves.cs" />
     <Compile Include="Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/Bloom.cs" />
     <Compile Include="Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/ImageEffectBase.cs" />
