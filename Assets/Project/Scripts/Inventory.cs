@@ -10,6 +10,8 @@ public class Inventory : MonoBehaviour
 
     public IList<GamePiece> Items = new List<GamePiece>();
 
+    public int MaxMagic; //Defeating an enemy increases the number
+
     void Start()
     {
         //TODO get this from a savefile, currently for demo it's hard-coded from the start of the demo. 
