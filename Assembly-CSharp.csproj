@@ -132,6 +132,7 @@
     <Compile Include="Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/Twirl.cs" />
     <Compile Include="Assets/Minimax_Chess_AI/LeanTween/Framework/LeanTween.cs" />
     <Compile Include="Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/NoiseAndScratches.cs" />
+    <Compile Include="Assets/Project/Scripts/HUDText.cs" />
     <Compile Include="Assets/Minimax_Chess_AI/Scripts/Movement/PawnMovement.cs" />
     <Compile Include="Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/DepthOfFieldDeprecated.cs" />
     <Compile Include="Assets/Minimax_Chess_AI/Scripts/Movement/QueenMovement.cs" />
