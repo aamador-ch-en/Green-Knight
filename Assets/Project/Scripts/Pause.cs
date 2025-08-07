@@ -62,7 +62,6 @@ public class Pause : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.Return))
             {
                 //TODO add Yes or No confirmation when clicking on Return and Retry
-                Debug.Log(SelectedIndex.ToString());
                 switch (SelectedIndex)
                 {
                     case PauseIndex.back:
