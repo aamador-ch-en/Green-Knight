@@ -96,7 +96,6 @@
     <Compile Include="Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/SepiaTone.cs" />
     <Compile Include="Assets/Minimax_Chess_AI/Scripts/InputController.cs" />
     <Compile Include="Assets/UnityTechnologies/ParticlePack/Shared/Scripts/ProximityActivate.cs" />
-    <Compile Include="Assets/PolygonDog/Scripts/POLYGON_CameraController.cs" />
     <Compile Include="Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/EdgeDetection.cs" />
     <Compile Include="Assets/Minimax_Chess_AI/Scripts/Pieces/King.cs" />
     <Compile Include="Assets/Minimax_Chess_AI/Scripts/AI/AIController.cs" />
@@ -120,11 +119,9 @@
     <Compile Include="Assets/Minimax_Chess_AI/Scripts/Movement/Movement.cs" />
     <Compile Include="Assets/TutorialInfo/Scripts/Readme.cs" />
     <Compile Include="Assets/Minimax_Chess_AI/LeanTween/Framework/LeanSmooth.cs" />
-    <Compile Include="Assets/PolygonDog/Scripts/POLYGON_DogAnimationController.cs" />
     <Compile Include="Assets/Minimax_Chess_AI/Scripts/Board.cs" />
     <Compile Include="Assets/Minimax_Chess_AI/Scripts/StateMachine/States/MoveSelectionState.cs" />
     <Compile Include="Assets/Minimax_Chess_AI/Scripts/AI/AffectedPiece.cs" />
-    <Compile Include="Assets/PolygonDog/Scripts/POLYGON_DogPrefabs.cs" />
     <Compile Include="Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/BloomOptimized.cs" />
     <Compile Include="Assets/Minimax_Chess_AI/Scripts/StateMachine/States/PieceMovementState.cs" />
     <Compile Include="Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/VignetteAndChromaticAberration.cs" />
@@ -144,6 +141,7 @@
     <Compile Include="Assets/Minimax_Chess_AI/Scripts/AI/Ply.cs" />
     <Compile Include="Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/CreaseShading.cs" />
     <Compile Include="Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/BloomAndFlares.cs" />
+    <Compile Include="Assets/Project/Scripts/Pause.cs" />
     <Compile Include="Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/ScreenOverlay.cs" />
     <Compile Include="Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Scripts/Triangles.cs" />
     <Compile Include="Assets/Minimax_Chess_AI/Scripts/Pieces/Queen.cs" />
@@ -272,7 +270,6 @@
     <None Include="Assets/PolygonNatureBiomes/PNB_Core/Shaders/SyntyStudios_Skybox_NoFog.shader" />
     <None Include="Assets/PolygonNatureBiomes/PNB_Core/Shaders/SyntyStudios_TexturePanner.shader" />
     <None Include="Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/NoiseEffectShaderRGB.shader" />
-    <None Include="Assets/PolygonDog/Documentation/Guide.txt" />
     <None Include="Assets/NatureStarterKit2/Standard Assets/Effects/ImageEffects/Shaders/_Antialiasing/FXAA2.shader" />
     <None Include="Assets/UnityTechnologies/ParticlePack/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
     <None Include="Assets/Fristy Mobile CG/Shaders/Foliage.shader" />
