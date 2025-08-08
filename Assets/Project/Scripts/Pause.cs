@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,7 +9,8 @@ public class Pause : MonoBehaviour
     public TextMeshProUGUI AreaText;
     public TextMeshProUGUI MainText;
     public TextMeshProUGUI RetryText;
-    
+    public delegate void PauseGame();
+    public static PauseGame onPauseGame;
     PauseIndex SelectedIndex = PauseIndex.back;
     void Start()
     {
