@@ -1473,7 +1473,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3071499285553987728, guid: d938e43c4f2f7c954a8715b12a74dc53, type: 3}
       propertyPath: m_Name
-      value: PauseManager
+      value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 3071499285553987728, guid: d938e43c4f2f7c954a8715b12a74dc53, type: 3}
       propertyPath: m_IsActive

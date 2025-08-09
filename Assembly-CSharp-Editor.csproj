@@ -48,22 +48,9 @@
     <Analyzer Include="/home/media/Unity/Hub/Editor/6000.0.49f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/NatureStarterKit2/Editor/ImageEffects/CameraMotionBlurEditor.cs" />
     <Compile Include="Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs" />
-    <Compile Include="Assets/NatureStarterKit2/Editor/ImageEffects/SunShaftsEditor.cs" />
-    <Compile Include="Assets/NatureStarterKit2/Editor/ImageEffects/VignetteAndChromaticAberrationEditor.cs" />
-    <Compile Include="Assets/NatureStarterKit2/Editor/ImageEffects/ColorCorrectionCurvesEditor.cs" />
-    <Compile Include="Assets/NatureStarterKit2/Editor/ImageEffects/BloomAndFlaresEditor.cs" />
     <Compile Include="Assets/UnityTechnologies/ParticlePack/Shared/Ramps/Editor/RampAssetEditor.cs" />
-    <Compile Include="Assets/NatureStarterKit2/Editor/ImageEffects/DepthOfFieldEditor.cs" />
-    <Compile Include="Assets/NatureStarterKit2/Editor/ImageEffects/BloomEditor.cs" />
     <Compile Include="Assets/Minimax_Chess_AI/LeanTween/Editor/LeanTweenDocumentationEditor.cs" />
-    <Compile Include="Assets/NatureStarterKit2/Editor/ImageEffects/TonemappingEditor.cs" />
-    <Compile Include="Assets/NatureStarterKit2/Editor/ImageEffects/NoiseAndGrainEditor.cs" />
-    <Compile Include="Assets/NatureStarterKit2/Editor/ImageEffects/CreaseShadingEditor.cs" />
-    <Compile Include="Assets/NatureStarterKit2/Editor/ImageEffects/EdgeDetectionEditor.cs" />
-    <Compile Include="Assets/NatureStarterKit2/Editor/ImageEffects/AntialiasingEditor.cs" />
-    <Compile Include="Assets/NatureStarterKit2/Editor/ImageEffects/DepthOfFieldDeprecatedEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
