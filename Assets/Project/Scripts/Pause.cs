@@ -12,6 +12,7 @@ public class Pause : MonoBehaviour
     public delegate void PauseGame();
     public static PauseGame onPauseGame;
     PauseIndex SelectedIndex = PauseIndex.back;
+    public GameObject switchSFX;
     void Start()
     {
         SelectedIndex = PauseIndex.back;
@@ -32,6 +33,7 @@ public class Pause : MonoBehaviour
                 pauseScreen.SetActive(true);
                 gameScreen.SetActive(false);
             }
+            switchSFX.GetComponent<AudioSource>().Play();
         }
         if (isPaused)
         {
@@ -76,9 +78,10 @@ public class Pause : MonoBehaviour
                         break;
                 }
             }
-            if (Input.GetKeyDown(KeyCode.UpArrow)||Input.GetKeyDown(KeyCode.DownArrow))
+            if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
             {
                 HighlightSelect();
+                switchSFX.GetComponent<AudioSource>().Play();
             }
         }
     }

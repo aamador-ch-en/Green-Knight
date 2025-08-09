@@ -1,13 +1,15 @@
 using System;
 using TMPro;
-using Unity.VisualScripting.AssemblyQualifiedNameParser;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class Main : MonoBehaviour
 {
     public GameObject soundScreen;
     public GameObject mainScreen;
+    public GameObject switchSound;
+    public GameObject startSound;
     public TextMeshProUGUI StartText;
     public TextMeshProUGUI SoundText;
     public TextMeshProUGUI LeaveText;
@@ -16,12 +18,16 @@ public class Main : MonoBehaviour
     public TextMeshProUGUI MusTxt;
     public TextMeshProUGUI SFXTxt;
     bool isMusicSelect;
+    AudioSource switchSource;
+    public AudioMixer masterMix;
     MainIndex SelectedIndex = MainIndex.start;
     void Start()
     {
         SelectedIndex = MainIndex.start;
         HighlightSelect();
         isMusicSelect = true;
+        switchSource = switchSound.GetComponent<AudioSource>();
+                    
     }
     void Update()
     {
@@ -30,12 +36,14 @@ public class Main : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
+                switchSource.Play();
                 soundScreen.SetActive(false);
                 mainScreen.SetActive(true);
             }
             if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow))
             {
                 isMusicSelect = !isMusicSelect;
+                switchSource.Play();
             }
             if (isMusicSelect)
             {
@@ -62,6 +70,8 @@ public class Main : MonoBehaviour
                         mVol -= 5;
                     }
                     MusVol.SetText(mVol.ToString());
+                    float volume = -80+80*mVol/100;
+                    masterMix.SetFloat("Music", volume);
                 }
                 else
                 {
@@ -71,6 +81,9 @@ public class Main : MonoBehaviour
                         sVol -= 5;
                     }
                     SFXVol.SetText(sVol.ToString());
+                    float volume = -80+80*sVol/100;
+                    masterMix.SetFloat("SFX", volume);
+                    switchSource.Play();
                 }
             }
             if (Input.GetKeyDown(KeyCode.RightArrow))
@@ -83,6 +96,8 @@ public class Main : MonoBehaviour
                         mVol += 5;
                     }
                     MusVol.SetText(mVol.ToString());
+                    float volume = -80+80*mVol/100;
+                    masterMix.SetFloat("Music", volume);
                 }
                 else
                 {
@@ -92,6 +107,9 @@ public class Main : MonoBehaviour
                         sVol += 5;
                     }
                     SFXVol.SetText(sVol.ToString());
+                    float volume = -80+80*sVol/100;
+                    masterMix.SetFloat("SFX", volume);
+                    switchSource.Play();
                 }
             }
         }
@@ -108,6 +126,7 @@ public class Main : MonoBehaviour
                     SelectedIndex--;
                 }
                 HighlightSelect();
+                switchSource.Play();
             }
             if (Input.GetKeyDown(KeyCode.DownArrow))
             {
@@ -120,6 +139,7 @@ public class Main : MonoBehaviour
                     SelectedIndex++;
                 }
                 HighlightSelect();
+                switchSource.Play();
             }
 
             if (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.Return))
@@ -128,11 +148,20 @@ public class Main : MonoBehaviour
                 switch (SelectedIndex)
                 {
                     case MainIndex.start:
+                        startSound.GetComponent<AudioSource>().Play();
                         SceneManager.LoadSceneAsync(2);
                         break;
                     case MainIndex.sound:
+                        switchSource.Play();
                         mainScreen.SetActive(false);
                         soundScreen.SetActive(true);
+                        float volumeMusic;
+                        masterMix.GetFloat("Music", out volumeMusic);
+                        MusVol.text = (volumeMusic * 100 / 80 + 100).ToString();
+
+                        float volumeSFX;
+                        masterMix.GetFloat("SFX", out volumeSFX);
+                        SFXVol.text=(100 + volumeSFX * 100 / 80).ToString();
                         break;
                     case MainIndex.quit:
                         Debug.Log("Application.Quit()");
