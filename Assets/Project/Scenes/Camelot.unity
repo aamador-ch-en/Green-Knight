@@ -2014,6 +2014,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -10.5
       objectReference: {fileID: 0}
+    - target: {fileID: 8606728956839466089, guid: b80452e37e8a2ac97be2eca8e6b50b07, type: 3}
+      propertyPath: _runSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8606728956839466089, guid: b80452e37e8a2ac97be2eca8e6b50b07, type: 3}
+      propertyPath: _walkSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8606728956839466089, guid: b80452e37e8a2ac97be2eca8e6b50b07, type: 3}
+      propertyPath: _sprintSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8606728956839466089, guid: b80452e37e8a2ac97be2eca8e6b50b07, type: 3}
+      propertyPath: _alwaysStrafe
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

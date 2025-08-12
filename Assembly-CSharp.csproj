@@ -62,6 +62,7 @@
     <Compile Include="Assets/Minimax_Chess_AI/LeanTween/Framework/LeanTest.cs" />
     <Compile Include="Assets/Minimax_Chess_AI/Scripts/Pieces/Piece.cs" />
     <Compile Include="Assets/Minimax_Chess_AI/Scripts/Player.cs" />
+    <Compile Include="Assets/Project/Scripts/Enemy.cs" />
     <Compile Include="Assets/Minimax_Chess_AI/Scripts/StateMachine/States/TurnEndState.cs" />
     <Compile Include="Assets/Minimax_Chess_AI/LeanTween/Framework/LTDescr.cs" />
     <Compile Include="Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Scripts/SpawnEffect.cs" />
