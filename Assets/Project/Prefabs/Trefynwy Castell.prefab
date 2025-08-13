@@ -8,10 +8,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 362357874328527963, guid: b9c027e2179e565b996c7acb3bb3a6b4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 874373621758122056, guid: b9c027e2179e565b996c7acb3bb3a6b4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1178693504517136294, guid: b9c027e2179e565b996c7acb3bb3a6b4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1323706596111454275, guid: b9c027e2179e565b996c7acb3bb3a6b4, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 12eb83ae223b562128c187645796c342, type: 2}
+    - target: {fileID: 1376211098741010670, guid: b9c027e2179e565b996c7acb3bb3a6b4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1392397013004999325, guid: b9c027e2179e565b996c7acb3bb3a6b4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 1691853680171127762, guid: b9c027e2179e565b996c7acb3bb3a6b4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.5809965
@@ -52,6 +72,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1980582198829827677, guid: b9c027e2179e565b996c7acb3bb3a6b4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2031540532462340456, guid: b9c027e2179e565b996c7acb3bb3a6b4, type: 3}
       propertyPath: m_Name
       value: Trefynwy Castell
@@ -87,6 +111,38 @@ PrefabInstance:
     - target: {fileID: 2509142313448880802, guid: b9c027e2179e565b996c7acb3bb3a6b4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 14.127
+      objectReference: {fileID: 0}
+    - target: {fileID: 5377479195769898812, guid: b9c027e2179e565b996c7acb3bb3a6b4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6306261547307226926, guid: b9c027e2179e565b996c7acb3bb3a6b4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 7222797731946182108, guid: b9c027e2179e565b996c7acb3bb3a6b4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 7504792545501885481, guid: b9c027e2179e565b996c7acb3bb3a6b4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 7599632218647451485, guid: b9c027e2179e565b996c7acb3bb3a6b4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 7920416705171117994, guid: b9c027e2179e565b996c7acb3bb3a6b4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8735950457016785094, guid: b9c027e2179e565b996c7acb3bb3a6b4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8875847402575125549, guid: b9c027e2179e565b996c7acb3bb3a6b4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

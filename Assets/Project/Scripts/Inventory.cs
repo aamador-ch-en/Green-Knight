@@ -11,6 +11,10 @@ public class Inventory : MonoBehaviour
 
     public int ceiniog;
 
+    public void SetCeiniog(int ceig)
+    {
+        ceiniog = ceig;
+    }
     public int GetCeiniog()
     {
         return ceiniog;

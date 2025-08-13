@@ -6,14 +6,14 @@ public class Enemy : MonoBehaviour
 {
     public GameObject PlayerObject;
     public GameObject PlayerInventory;
-    public GameObject RPGObject;
+    public GameObject GameMngr;
     void Start()
     {
         //Vector3 test = transform.position;
         //Debug.Log(test.x);
         //Debug.Log(test.y);
         //Debug.Log(test.z);
-         Vector3 test = PlayerObject.transform.position;
+        Vector3 test = PlayerObject.transform.position;
         Debug.Log(test.x);
         Debug.Log(test.y);
         Debug.Log(test.z);
@@ -24,8 +24,13 @@ public class Enemy : MonoBehaviour
         distance = Vector3.Distance(PlayerObject.transform.position, transform.position);
         if (distance < 4)
         {
-            SceneManager.LoadSceneAsync(1);
+            LoadChessScen();
         }
+    }
+    void LoadChessScen()
+    {
+        GameMngr.SendMessage("LoadChess");
+        //SceneManager.LoadSceneAsync(1, LoadSceneMode.Additive);
     }
     
 }
