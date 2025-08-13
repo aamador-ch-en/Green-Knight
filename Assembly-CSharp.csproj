@@ -100,6 +100,7 @@
     <Compile Include="Assets/Minimax_Chess_AI/Scripts/StateMachine/States/MoveSelectionState.cs" />
     <Compile Include="Assets/Minimax_Chess_AI/Scripts/AI/AffectedPiece.cs" />
     <Compile Include="Assets/Minimax_Chess_AI/Scripts/StateMachine/States/PieceMovementState.cs" />
+    <Compile Include="Assets/Project/Scripts/ChessManager.cs" />
     <Compile Include="Assets/Minimax_Chess_AI/LeanTween/Framework/LeanTween.cs" />
     <Compile Include="Assets/Project/Scripts/HUDText.cs" />
     <Compile Include="Assets/Minimax_Chess_AI/Scripts/Movement/PawnMovement.cs" />

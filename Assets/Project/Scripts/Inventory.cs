@@ -11,6 +11,11 @@ public class Inventory : MonoBehaviour
 
     public int ceiniog;
 
+    public int GetCeiniog()
+    {
+        return ceiniog;
+    }
+
     public IList<GamePiece> Items = new List<GamePiece>();
 
     public int MaxMagic; //Defeating an enemy increases the number
@@ -43,10 +48,6 @@ public class Inventory : MonoBehaviour
         InventoryElement.text = InventoryName;
     }
 
-    public void GetMoney()
-    {
-        ceiniog += 1;
-    }
 
     public void GetItem(string itemName, int amount = 1)
     {
@@ -109,11 +110,6 @@ public class Inventory : MonoBehaviour
         while (i < myList.Count);
         
         return returnString;
-    }
-
-    void ChessFight()
-    {
-        Debug.Log("Ora si ya te cargo el payaso");
     }
 
 

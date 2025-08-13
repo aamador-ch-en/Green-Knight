@@ -1,8 +1,12 @@
+using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
     public GameObject PlayerObject;
+    public GameObject PlayerInventory;
+    public GameObject RPGObject;
     void Start()
     {
         //Vector3 test = transform.position;
@@ -18,7 +22,15 @@ public class Enemy : MonoBehaviour
     {
         float distance;
         distance = Vector3.Distance(PlayerObject.transform.position, transform.position);
-        Debug.Log(distance.ToString());
+        if (distance < 4)
+        {
+            PlayerObject.SetActive(false);
+            SceneManager.LoadSceneAsync(1, LoadSceneMode.Additive);
+        }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            PlayerObject.SetActive(true);
+        }
     }
     
 }
