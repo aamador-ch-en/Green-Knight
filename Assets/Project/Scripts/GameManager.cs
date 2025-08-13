@@ -144,7 +144,7 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadSceneAsync(1, LoadSceneMode.Additive);
             combatScreen.SetActive(true);
             gameScreen.SetActive(false);
-            //playerChar.SetActive(false);
+            playerChar.SetActive(false);
         }
         
     }
