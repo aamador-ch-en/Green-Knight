@@ -24,12 +24,7 @@ public class Enemy : MonoBehaviour
         distance = Vector3.Distance(PlayerObject.transform.position, transform.position);
         if (distance < 4)
         {
-            PlayerObject.SetActive(false);
-            SceneManager.LoadSceneAsync(1, LoadSceneMode.Additive);
-        }
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            PlayerObject.SetActive(true);
+            SceneManager.LoadSceneAsync(1);
         }
     }
     

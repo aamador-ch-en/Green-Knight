@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Pause : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     public GameObject pauseScreen;
     public GameObject gameScreen;
@@ -13,6 +13,13 @@ public class Pause : MonoBehaviour
     public static PauseGame onPauseGame;
     PauseIndex SelectedIndex = PauseIndex.back;
     public GameObject switchSFX;
+    public GameObject playerChar;
+    public GameObject YeOleBagOfItems;
+    void Awake()
+    {
+        //DontDestroyOnLoad(playerChar);
+        DontDestroyOnLoad(YeOleBagOfItems);
+    }
     void Start()
     {
         SelectedIndex = PauseIndex.back;

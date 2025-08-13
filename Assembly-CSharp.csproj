@@ -87,6 +87,7 @@
     <Compile Include="Assets/Minimax_Chess_AI/Scripts/Pieces/Knight.cs" />
     <Compile Include="Assets/Minimax_Chess_AI/Scripts/StateMachine/States/AIPlayingState.cs" />
     <Compile Include="Assets/Minimax_Chess_AI/Scripts/Pieces/Bishop.cs" />
+    <Compile Include="Assets/Project/Scripts/GameManager.cs" />
     <Compile Include="Assets/UnityTechnologies/ParticlePack/Shared/Ramps/Runtime/RampAsset.cs" />
     <Compile Include="Assets/UnityTechnologies/ParticlePack/Shared/Scripts/AdjustTimeScale.cs" />
     <Compile Include="Assets/Minimax_Chess_AI/Scripts/Tile.cs" />
@@ -109,7 +110,6 @@
     <Compile Include="Assets/Minimax_Chess_AI/Scripts/Pieces/Rook.cs" />
     <Compile Include="Assets/Minimax_Chess_AI/LeanTween/Framework/LTSeq.cs" />
     <Compile Include="Assets/Minimax_Chess_AI/Scripts/AI/Ply.cs" />
-    <Compile Include="Assets/Project/Scripts/Pause.cs" />
     <Compile Include="Assets/Minimax_Chess_AI/Scripts/Pieces/Queen.cs" />
   </ItemGroup>
   <ItemGroup>

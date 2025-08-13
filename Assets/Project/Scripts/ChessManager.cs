@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ChessManager : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class ChessManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            ChessCam.gameObject.SetActive(false);    
+            SceneManager.LoadSceneAsync(2);    
         }
     }
 }
