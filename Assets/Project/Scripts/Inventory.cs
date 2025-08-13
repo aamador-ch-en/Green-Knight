@@ -111,6 +111,11 @@ public class Inventory : MonoBehaviour
         return returnString;
     }
 
+    void ChessFight()
+    {
+        Debug.Log("Ora si ya te cargo el payaso");
+    }
+
 
     public struct GamePiece
     {
