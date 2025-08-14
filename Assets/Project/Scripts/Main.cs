@@ -165,7 +165,7 @@ public class Main : MonoBehaviour
                         break;
                     case MainIndex.quit:
                         Debug.Log("Application.Quit()");
-                        //Application.Quit();
+                        Application.Quit();
                         break;
                 }
             }
