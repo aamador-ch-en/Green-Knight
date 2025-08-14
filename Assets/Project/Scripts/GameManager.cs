@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     PauseIndex SelectedIndex = PauseIndex.back;
     public GameObject switchSFX;
     public GameObject playerChar;
-    public GameObject Inventory;
+    public GameObject InventoryObj;
 
     bool chessLoaded;
 
@@ -98,11 +98,11 @@ public class GameManager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Q))
             {
-                int silver = Inventory.GetComponent<Inventory>().GetCeiniog();
-                Debug.Log(silver.ToString());
-                if (silver >= 5)
+                int silver = InventoryObj.GetComponent<Inventory>().ceiniog;
+                if (silver >= 1)
                 {
-                    silver -= 5;
+                    InventoryObj.SendMessage("TakeMoney");
+                    chessLoaded = false;
                     playerChar.SetActive(true);
                     SceneManager.UnloadSceneAsync(1);
                     combatScreen.SetActive(false);
@@ -138,16 +138,11 @@ public class GameManager : MonoBehaviour
 
     public void LoadChess()
     {
-        if (!chessLoaded)
-        {
-            AreaText.text = "Testing";
-            chessLoaded = true;
-            SceneManager.LoadSceneAsync(1, LoadSceneMode.Additive);
-            combatScreen.SetActive(true);
-            gameScreen.SetActive(false);
-            playerChar.SetActive(false);
-        }
-        
+        SceneManager.LoadSceneAsync(1, LoadSceneMode.Additive);
+        chessLoaded = true;
+        combatScreen.SetActive(true);
+        gameScreen.SetActive(false);
+        playerChar.SetActive(false);
     }
     
     enum PauseIndex

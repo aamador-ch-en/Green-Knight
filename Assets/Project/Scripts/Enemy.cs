@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
     public GameObject PlayerObject;
     public GameObject PlayerInventory;
     public GameObject GameMngr;
-    bool chessGame;
+    public bool chessGame;
     void Start()
     {
         //Vector3 test = transform.position;
@@ -29,11 +29,14 @@ public class Enemy : MonoBehaviour
             chessGame = false;
             LoadChessScen();
         }
+        if (distance > 10 && !chessGame)
+        {
+            chessGame = true;
+        }
     }
     void LoadChessScen()
     {
         GameMngr.SendMessage("LoadChess");
-        //SceneManager.LoadSceneAsync(1, LoadSceneMode.Additive);
     }
     
 }

@@ -11,15 +11,6 @@ public class Inventory : MonoBehaviour
 
     public int ceiniog;
 
-    public void SetCeiniog(int ceig)
-    {
-        ceiniog = ceig;
-    }
-    public int GetCeiniog()
-    {
-        return ceiniog;
-    }
-
     public IList<GamePiece> Items = new List<GamePiece>();
 
     public int MaxMagic; //Defeating an enemy increases the number
@@ -38,14 +29,19 @@ public class Inventory : MonoBehaviour
         GamePiece barbarian = new GamePiece("Barbarian", 1);
         FairyPieces.Add(paladin);
         FairyPieces.Add(barbarian);
-        ceiniog = 10; //We get 5 from Merlin and 5 from Lancelot, TODO change this from being hardcoded
+        ceiniog = 5;
         GamePiece bread = new GamePiece("Bread", 1);
         GamePiece sword = new GamePiece("Sword", 1);
         GamePiece bracelet = new GamePiece("Arthur's bff bracelet", 1);
         Items.Add(bread);
         Items.Add(sword);
         Items.Add(bracelet);
+        UpdateLists();
+        
+    }
 
+    void UpdateLists()
+    {
         PiecesName = ListToString(FairyPieces, true);
         PiecesElement.text = PiecesName;
         InventoryName = ListToString(Items, false);
@@ -69,8 +65,7 @@ public class Inventory : MonoBehaviour
         while (i < FairyPieces.Count);
         GamePiece newItem = new GamePiece(itemName, amount);
         Items.Add(newItem);
-        InventoryName = ListToString(Items, false);
-        InventoryElement.text = InventoryName;
+        UpdateLists();
     }
 
     public void GetPiece(string pieceName)
@@ -89,8 +84,19 @@ public class Inventory : MonoBehaviour
         while (i < FairyPieces.Count);
         GamePiece newPiece = new GamePiece(pieceName, 1);
         FairyPieces.Add(newPiece);
-        PiecesName = ListToString(FairyPieces, true);
-        PiecesElement.text = PiecesName;
+        UpdateLists();
+    }
+
+    public void GetMoney()
+    {
+        ceiniog += 1;
+        UpdateLists();
+    }
+
+    public void TakeMoney()
+    {
+        ceiniog -= 1;
+        UpdateLists();
     }
 
     string ListToString(IList<GamePiece> myList, bool isPiece)
@@ -115,8 +121,6 @@ public class Inventory : MonoBehaviour
         
         return returnString;
     }
-
-
     public struct GamePiece
     {
         public GamePiece(string fairy, int q)
