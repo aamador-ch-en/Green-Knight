@@ -1,4 +1,5 @@
 using TMPro;
+using UnityEditor.VisionOS;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -141,8 +142,22 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadSceneAsync(1, LoadSceneMode.Additive);
         chessLoaded = true;
         combatScreen.SetActive(true);
+        combatScreen.SendMessage("StartGame");
         gameScreen.SetActive(false);
         playerChar.SetActive(false);
+    }
+
+    public void UnloadChess()
+    {
+        chessLoaded = false;
+        combatScreen.SetActive(false);
+        gameScreen.SetActive(true);
+        playerChar.SetActive(true);
+        GameObject InventoryObj = GameObject.Find("InventoryObject");
+        InventoryObj.SendMessage("WinMsg");
+        GameObject TextObj = GameObject.Find("TextManager");
+        TextObj.SendMessage("UpdateSaxon");
+        SceneManager.UnloadSceneAsync(1);
     }
     
     enum PauseIndex

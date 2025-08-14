@@ -1,5 +1,4 @@
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,6 +9,7 @@ public class ChessManager : MonoBehaviour
     public GameObject GameOver;
     public GameObject Victory;
     public Camera ChessCam;
+    public int silv;
     bool isGameOngoing;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -33,6 +33,10 @@ public class ChessManager : MonoBehaviour
             Victory.SetActive(true);
             StartCoroutine("WaitForScreenToEnd");
         }
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            enemyKing.SetActive(false); //Need to test and winning every time is hard
+        }
     }
     IEnumerator WaitForScreenToEnd()
     {
@@ -43,6 +47,13 @@ public class ChessManager : MonoBehaviour
         }
         if (Victory.activeSelf)
         {
+            GameObject GmMng = GameObject.Find("GameManager");
+            GmMng.SendMessage("UnloadChess");
+            //Code useful for bosses later... they give more items and stuff
+            //GameObject InventoryObj = GameObject.Find("InventoryObject");
+            //InventoryObj.SendMessage("WinMsg");
+            //GameObject TextObj = GameObject.Find("TextManager");
+            //TextObj.SendMessage("UpdateSaxon");
             SceneManager.UnloadSceneAsync(1);
         }
     }

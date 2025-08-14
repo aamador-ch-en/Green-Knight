@@ -88,6 +88,7 @@
     <Compile Include="Assets/Minimax_Chess_AI/Scripts/StateMachine/States/AIPlayingState.cs" />
     <Compile Include="Assets/Minimax_Chess_AI/Scripts/Pieces/Bishop.cs" />
     <Compile Include="Assets/Project/Scripts/GameManager.cs" />
+    <Compile Include="Assets/Project/Scripts/CombatManager.cs" />
     <Compile Include="Assets/UnityTechnologies/ParticlePack/Shared/Ramps/Runtime/RampAsset.cs" />
     <Compile Include="Assets/UnityTechnologies/ParticlePack/Shared/Scripts/AdjustTimeScale.cs" />
     <Compile Include="Assets/Minimax_Chess_AI/Scripts/Tile.cs" />

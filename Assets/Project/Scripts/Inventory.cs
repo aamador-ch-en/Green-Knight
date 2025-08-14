@@ -87,9 +87,10 @@ public class Inventory : MonoBehaviour
         UpdateLists();
     }
 
-    public void GetMoney()
+    public void WinMsg()
     {
         ceiniog += 1;
+        MaxMagic += 1;
         UpdateLists();
     }
 
