@@ -54,7 +54,6 @@ public class ChessManager : MonoBehaviour
             //InventoryObj.SendMessage("WinMsg");
             //GameObject TextObj = GameObject.Find("TextManager");
             //TextObj.SendMessage("UpdateSaxon");
-            SceneManager.UnloadSceneAsync(1);
         }
     }
 }

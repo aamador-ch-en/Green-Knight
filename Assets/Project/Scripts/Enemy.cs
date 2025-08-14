@@ -7,29 +7,21 @@ public class Enemy : MonoBehaviour
     public GameObject PlayerObject;
     public GameObject PlayerInventory;
     public GameObject GameMngr;
-    public bool chessGame;
+    public GameObject ThisObject;
     void Start()
     {
         Vector3 test = PlayerObject.transform.position;
-        chessGame = true;
     }
     void Update()
     {
         float distance;
         distance = Vector3.Distance(PlayerObject.transform.position, transform.position);
-        if (distance < 4 && chessGame)
+        if (distance < 4)
         {
-            chessGame = false;
-            LoadChessScen();
+            GameMngr.SendMessage("LoadChess");
+            //If win we won, if lost... They robbed us and fled
+            Destroy(ThisObject);
         }
-        if (distance > 10 && !chessGame)
-        {
-            chessGame = true;
-        }
-    }
-    void LoadChessScen()
-    {
-        GameMngr.SendMessage("LoadChess");
     }
     
 }
