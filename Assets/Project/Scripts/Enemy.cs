@@ -10,14 +10,7 @@ public class Enemy : MonoBehaviour
     public bool chessGame;
     void Start()
     {
-        //Vector3 test = transform.position;
-        //Debug.Log(test.x);
-        //Debug.Log(test.y);
-        //Debug.Log(test.z);
         Vector3 test = PlayerObject.transform.position;
-        Debug.Log(test.x);
-        Debug.Log(test.y);
-        Debug.Log(test.z);
         chessGame = true;
     }
     void Update()
