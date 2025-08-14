@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public GameObject gameScreen;
     public GameObject combatScreen;
     public GameObject WinScreen;
+    public GameObject LoadingScreen;
     public TextMeshProUGUI AreaText;
     public TextMeshProUGUI MainText;
     public TextMeshProUGUI RetryText;
@@ -150,7 +151,8 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadSceneAsync(1, LoadSceneMode.Additive);
         chessLoaded = true;
         combatScreen.SetActive(true);
-        combatScreen.SendMessage("StartGame");
+        combatScreen.SendMessage("StartGame"); //Load text
+        //LoadingScreen.SetActive(true);
         gameScreen.SetActive(false);
         playerChar.SetActive(false);
     }
