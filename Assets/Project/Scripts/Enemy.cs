@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     public GameObject PlayerObject;
     public GameObject PlayerInventory;
     public GameObject GameMngr;
+    bool chessGame;
     void Start()
     {
         //Vector3 test = transform.position;
@@ -17,13 +18,15 @@ public class Enemy : MonoBehaviour
         Debug.Log(test.x);
         Debug.Log(test.y);
         Debug.Log(test.z);
+        chessGame = true;
     }
     void Update()
     {
         float distance;
         distance = Vector3.Distance(PlayerObject.transform.position, transform.position);
-        if (distance < 4)
+        if (distance < 4 && chessGame)
         {
+            chessGame = false;
             LoadChessScen();
         }
     }

@@ -99,13 +99,14 @@ public class GameManager : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Q))
             {
                 int silver = Inventory.GetComponent<Inventory>().GetCeiniog();
+                Debug.Log(silver.ToString());
                 if (silver >= 5)
                 {
                     silver -= 5;
+                    playerChar.SetActive(true);
                     SceneManager.UnloadSceneAsync(1);
                     combatScreen.SetActive(false);
                     gameScreen.SetActive(true);
-                    playerChar.SetActive(true);
                 }
             }
         }

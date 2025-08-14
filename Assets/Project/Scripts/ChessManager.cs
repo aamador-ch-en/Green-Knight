@@ -16,7 +16,7 @@ public class ChessManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            SceneManager.LoadSceneAsync(2);    
+            //SceneManager.LoadSceneAsync(2);    
         }
     }
 }
