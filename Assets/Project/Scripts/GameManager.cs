@@ -149,11 +149,12 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(1, LoadSceneMode.Additive);
         chessLoaded = true;
+        gameScreen.SetActive(false);
+        playerChar.SetActive(false);
         combatScreen.SetActive(true);
         combatScreen.SendMessage("StartGame"); //Load text
         //LoadingScreen.SetActive(true);
-        gameScreen.SetActive(false);
-        playerChar.SetActive(false);
+        
     }
 
     public void UnloadChess()
